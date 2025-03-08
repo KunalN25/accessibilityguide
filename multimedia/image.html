@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Accessibility</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <img src="temple.jpg" />
+    <img
+      src="temple.jpg"
+      alt="The Meenakshi Temple, situated in Madurai, a South Indian City is dedicated to goddess Meenakshi, a form of Parvati"
+    />
+    <img
+      src="temple.jpg"
+      alt="The Meenakshi Temple, situated in Madurai, a South Indian City is dedicated to goddess Meenakshi, a form of Parvati"
+      title="The Meenakshi Temple"
+    />
+    <img
+      src="temple.jpg"
+      aria-labelledby="temple-label"
+      title="The Meenakshi Temple"
+    />
+    <p id="temple-label">
+      The Meenakshi Temple, situated in Madurai, a South Indian City is
+      dedicated to goddess Meenakshi, a form of Parvati
+    </p> -->
+
+    <figure>
+      <img
+        src="temple.jpg"
+        aria-describedby="temple-descr"
+        alt="The Meenakshi Temple"
+      />
+      <figcaption id="temple-descr">
+        The Meenakshi Temple, situated in Madurai, a South Indian City is
+        dedicated to goddess Meenakshi, a form of Parvati
+      </figcaption>
+    </figure>
+  </body>
+</html>

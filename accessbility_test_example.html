@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility Test</title>
+  </head>
+  <body>
+    <!-- <h1>Welcome</h1>
+
+    Missing alt attribute
+    <img src="image.jpg" />
+
+    Tabindex is poisitve value
+    <button tabindex="2">Click Here</button>
+
+    Not keyboard accessible, should be a <button>
+    <div onclick="alert('Clicked!')" class="button">Click Me</div>
+
+    <form>
+      <input type="text" />
+      No associated label
+    </form> -->
+
+    <h1>Welcome</h1>
+    <img src="image.jpg" alt="Image" />
+    <button>Click Here</button>
+    <div onclick="alert('Clicked!')" class="button">Click Me</div>
+    <form>
+      <label for="textField">Label</label>
+      <input id="textField" type="text" />
+    </form>
+  </body>
+</html>
