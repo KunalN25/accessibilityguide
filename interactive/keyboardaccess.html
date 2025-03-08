@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Page Layout</title>
+  </head>
+
+  <body>
+    <!-- Good semantics -->
+    <p>
+      Visit my blog at
+      <a href="https://www.freecodecamp.org/news/author/KunalN25/"
+        >freecodecamp.org</a
+      >
+    </p>
+    <button>Click me</button>
+    <button tabindex="-1">Click me again</button>
+
+    <div><input type="text" placeholder="Enter your name" /></div>
+
+    <div>
+      <div id="customButton" role="button" tabindex="0">Click me</div>
+    </div>
+
+    <!-- Bad semantics -->
+    <p>
+      Visit my blog at
+      <span
+        id="link"
+        onclick="window.location.href='https://www.freecodecamp.org/news/author/KunalN25/'"
+      >
+        freecodecamp.org</span
+      >
+    </p>
+    <div>
+      <div id="customButton" onclick="alert('You clicked me!');">Click me</div>
+    </div>
+
+    <script>
+      document.getElementById("customButton").addEventListener("click", () => {
+        alert("You clicked me!");
+      });
+      document
+        .getElementById("customButton")
+        .addEventListener("keypress", (event) => {
+          if (event.key === "Enter") {
+            document.activeElement.click();
+          }
+        });
+    </script>
+  </body>
+</html>

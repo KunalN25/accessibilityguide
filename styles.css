@@ -1,0 +1,97 @@
+#heading1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#heading2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#mylist {
+  /* list-style-type: none; */
+  /* padding: 0; */
+}
+
+#link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#customButton {
+  color: black;
+  background-color: rgb(198, 191, 191);
+  cursor: pointer;
+  padding: 0.3rem;
+  width: 5%;
+}
+
+#nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: #ff0000;
+}
+
+a:hover,
+a:visited,
+a:focus {
+  color: #810909;
+  text-decoration: none;
+}
+
+a:active {
+  color: #000000;
+  background-color: #a60000;
+}
+
+#contrast1 {
+  color: #d94545;
+}
+
+#contrast2 {
+  color: #cb9c9c;
+}
+
+#dialog {
+  background-color: rgb(185, 172, 172);
+  border: 1px solid black;
+}
+
+#temple-label {
+  display: none;
+}
+
+.video-container {
+  width: 480px;
+  /* margin: 10px auto; */
+  border: 1px solid #ccc;
+}
+video,
+audio,
+.controls {
+  width: 100%;
+}
+
+.controls {
+  height: 36px;
+  margin-top: 1rem;
+}
+
+.controls div {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 36px;
+  width: 45px;
+}
+
+video {
+  margin-bottom: -5px;
+  width: 30%;
+  height: 30%;
+}
